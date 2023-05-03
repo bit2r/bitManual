@@ -1,0 +1,37 @@
+project:
+  type: book
+  output-dir: docs
+
+lang: kr
+
+book:
+  title: "R 공식 매뉴얼"
+  author: "한국 R 사용자회"
+  date: last-modified
+  date-format: "YYYY년 MM월 DD일"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+  repo-url: https://github.com/bit2r/bitManual
+  search: 
+    location: sidebar
+    type: textbox
+  downloads: [pdf]
+
+bibliography: references.bib
+mainfont: "NanumMyeongjo"
+sansfont: "NanumGothic"
+monofont: "D2Coding"
+
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+# filters:
+#    - bit2r
+
